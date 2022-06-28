@@ -16,7 +16,31 @@ class Main
         puts "10. Exit"
         puts "Enter your selection: "
         selection = gets.chomp.to_i
-        
+        case selection
+        when 1
+            list_books
+        when 2
+            list_music_albums
+        when 3
+            list_games
+        when 4
+            list_genres
+        when 5
+            list_labels
+        when 6
+            list_authors
+        when 7
+            add_book
+        when 8
+            add_music_album
+        when 9
+            add_game
+        when 10
+            exit
+        else
+            puts "Invalid selection. Please try again."
+            main_menu
+        end
     end
 end
 
