@@ -11,4 +11,10 @@ class Item
         @publish_date = publish_date
         @archived = false
     end
+
+    def can_be_archived?
+    end
+
+    def move_to_archive
+    end
 end
